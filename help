@@ -1,0 +1,22 @@
+HELP:
+
+ctrl f1 - htop
+ctrl f2 - weather
+ctrl f3 - pamac-manager
+ctrl f4 - Pause/Play mocp
+ctrl f5 - gsimplecal
+
+<win> + <y> = mocp (Scratchpad)
+<win> + Backspace = switch windows
+<win> + m = fullscreen [switch with <win> + Backspace]
+<win> + t = master
+
+i3 + qtile: <Shift>+<win>+arrows = switch windows
+
+bspwm: <win>+arrow = switch windows
+
+xmonad: ctrl+m -> tabbed
+		ctrl+/ -> normal
+		ctrl + shift + m = mocp (Scratchpad)
+		ctrl+z = ranger (Scratchpad)
+

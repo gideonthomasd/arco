@@ -1,0 +1,5 @@
+# paccache -r
+
+# rm /var/lib/pacman/db.lck
+
+# pacman -Sy archlinux-keyring

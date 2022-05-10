@@ -1,3 +1,12 @@
-# arco
+# bspwm-arco
 
-Install from arcolinuxd.  Sudo pacman -Syyu.  Run directories and do sudo systemctl enable lightdm.
+Install arco - no files needed. sudo pacman -Syyu
+
+chmod +x *.sh
+
+run ./100 etc files
+
+sudo systemctl enable lightdm
+
+Includes openbox uses shortcuts
+xmonad --recompile later then logout
