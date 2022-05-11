@@ -36,7 +36,7 @@ super + F5
 	blueman-manager
 	
 super + x
-	arcolinux-logout
+	archlinux-logout
 # ~/log.sh
 #  ~/.config/rofi/applets/applets/powermenu.sh
 #arcolinux-logout
