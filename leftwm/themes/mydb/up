@@ -76,7 +76,7 @@ echo "LoadTheme "$SCRIPTPATH"/theme.toml" > $XDG_RUNTIME_DIR/leftwm/commands.pip
 
 # Set background
 if [ -x "$(command -v feh)" ]; then
-  feh --bg-fill "$SCRIPTPATH"/background3.jpg
+  feh --bg-fill "$SCRIPTPATH"/background4.png
 fi
 
 #mainbar
