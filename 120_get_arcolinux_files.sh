@@ -48,7 +48,7 @@ timeshift
 polybar
 brave
 archlinux-logout-git
-arcolinux-pamac-all
+#arcolinux-pamac-all
 )
 
 count=0

@@ -101,7 +101,7 @@ lxterminal
 gparted
 pulsemixer
 htop
-qtile
+#qtile
 i3-gaps
 i3blocks
 sxiv
@@ -132,7 +132,8 @@ calcurse
 system-config-printer
 freerdp
 remmina
-pycharm-community-edition
+conky
+#pycharm-community-edition
 )
 
 count=0

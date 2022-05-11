@@ -347,7 +347,7 @@ cd ~/Luke/st-transparency-scrollback
 sudo make clean install
 
 #########################Install bumblebee-status files - mine
-cd ~/bspwm-arco/i3/bumblebee-status/myfiles
+cd ~/arco/i3/bumblebee-status/myfiles
 sudo cp -r * /usr/share/bumblebee-status/bumblebee_status/modules/contrib
 #xmonad --recompile
 
