@@ -376,11 +376,7 @@
         <command>xfce4-appfinder</command>
       </action>
     </keybind>
-    <keybind key="W-p">
-      <action name="Execute">
-        <command>dmenu_run -i -nb '#191919' -nf '#fea63c' -sb '#fea63c' -sf '#191919' -fn 'NotoMonoRegular:bold:pixelsize=14'</command>
-      </action>
-    </keybind>
+   
     <keybind key="A-F4">
       <action name="Close"/>
     </keybind>
@@ -424,44 +420,15 @@
     </keybind>
     <keybind key="C-A-k">
       <action name="Execute">
-        <command>arcolinux-logout</command>
+        <command>archlinux-logout</command>
       </action>
     </keybind>
     <keybind key="C-A-l">
       <action name="Execute">
-        <command>arcolinux-logout</command>
+        <command>archlinux-logout</command>
       </action>
     </keybind>
-    <keybind key="W-e">
-      <action name="Execute">
-        <command>geany</command>
-      </action>
-    </keybind>
-    <keybind key="W-m">
-      <action name="Execute">
-        <command>pragha</command>
-      </action>
-    </keybind>
-    <keybind key="W-h">
-      <action name="Execute">
-        <command>urxvt -T 'htop task manager' -e htop</command>
-      </action>
-    </keybind>
-    <keybind key="W-v">
-      <action name="Execute">
-        <command>pavucontrol</command>
-      </action>
-    </keybind>
-    <keybind key="C-A-u">
-      <action name="Execute">
-        <command>pavucontrol</command>
-      </action>
-    </keybind>
-    <keybind key="W-x">
-      <action name="Execute">
-        <command>arcolinux-logout</command>
-      </action>
-    </keybind>
+    
     <keybind key="W-Escape">
       <action name="Execute">
         <command>xkill</command>
@@ -574,91 +541,14 @@
     <keybind key="W-q">
       <action name="Close"/>
     </keybind>
-    <keybind key="W-Return">
-      <action name="Execute">
-        <command>lxterminal</command>
-      </action>
-    </keybind>
+    
     <keybind key="S-W-Return">
       <action name="Execute">
         <command>thunar</command>
       </action>
     </keybind>
-    <keybind key="W-F1">
-      <action name="Execute">
-        <command>exo-open --launch webbrowser</command>
-      </action>
-    </keybind>
-    <keybind key="W-F2">
-      <action name="Execute">
-        <command>subl3</command>
-      </action>
-    </keybind>
-    <keybind key="W-F3">
-      <action name="Execute">
-        <command>inkscape</command>
-      </action>
-    </keybind>
-    <keybind key="W-F4">
-      <action name="Execute">
-        <command>gimp</command>
-      </action>
-    </keybind>
-    <keybind key="W-F5">
-      <action name="Execute">
-        <command>meld</command>
-      </action>
-    </keybind>
-    <keybind key="W-F6">
-      <action name="Execute">
-        <command>vlc</command>
-      </action>
-    </keybind>
-    <keybind key="W-F7">
-      <action name="Execute">
-        <command>virtualbox</command>
-      </action>
-    </keybind>
-    <keybind key="W-F8">
-      <action name="Execute">
-        <command>thunar</command>
-      </action>
-    </keybind>
-    <keybind key="W-F9">
-      <action name="Execute">
-        <command>evolution</command>
-      </action>
-    </keybind>
-    <keybind key="W-F10">
-      <action name="Execute">
-        <command>spotify</command>
-      </action>
-    </keybind>
-    <keybind key="W-F11">
-      <action name="Execute">
-        <command>rofi -show run -fullscreen -font "Noto Sans 13"</command>
-      </action>
-    </keybind>
-    <keybind key="W-F12">
-      <action name="Execute">
-        <command>rofi -show run -font "Noto Sans 13"</command>
-      </action>
-    </keybind>
-    <keybind key="F12">
-      <action name="Execute">
-        <command>thunar</command>
-      </action>
-    </keybind>
-    <keybind key="F2">
-      <action name="Execute">
-        <command>jgmenu_run</command>
-      </action>
-    </keybind>
-    <keybind key="F9">
-      <action name="Execute">
-        <command>brave</command>
-      </action>
-    </keybind>
+   
+    
     <keybind key="C-S-Escape">
       <action name="Execute">
         <command>xfce4-taskmanager</command>
