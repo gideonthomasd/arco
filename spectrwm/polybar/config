@@ -35,7 +35,8 @@ compositing-border = over
 
 ; Define fallback values used by all module formats
 format-foreground = #FF0000
-format-background = #00FF00
+format-background = #0000FF
+;#00FF00
 format-underline =
 format-overline =
 format-spacing =
@@ -47,9 +48,12 @@ format-offset =
 ; Nord theme ============
 background = #2F343F
 foreground = #f3f4f5
-occupied = #cccccc
-active = #5e81ac
-alert = #d08770
+occupied = #990099
+;#cccccc
+active = #FF3399
+;#5e81ac
+alert = #99ff99
+;#d08770
 volume-min = #a3be8c
 volume-med = #ebcb8b
 volume-max = #bf616a
@@ -95,10 +99,14 @@ fixed-center = true
 bottom = false
 ;;separator = |
 
+
+
+
+
 background = ${colors.background}
 foreground = ${colors.foreground}
 
-line-size = 4
+line-size = 2
 line-color = #f00
 
 wm-restack = bspwm
@@ -108,7 +116,13 @@ override-redirect = true
 ; See the Messaging wiki page for more details..
 enable-ipc = true
 
-border-size = 0
+
+
+
+
+
+
+border-size = 2
 ;border-left-size = 0
 ;border-right-size = 25
 ;border-top-size = 0
@@ -321,13 +335,19 @@ format = <label-state>
 label-monitor = %name%
 
 label-active = %name%
-label-active-foreground = #ff99ff
-label-active-background = ${colors.background}
+label-active-foreground = #1b2124
+;#663300
+;#7F00FF
+;#ff99ff
+label-active-background = #5294e2
+;#66b2ff
+;${colors.background}
 label-active-underline= #6790eb
 label-active-padding = 2
 
 label-occupied = %name%
-label-occupied-foreground = #9999ff
+label-occupied-foreground = #00cc66
+;#9999ff
 label-occupied-background = ${colors.background}
 label-occupied-padding = 2
 
@@ -820,7 +840,8 @@ label-monitor = %name%
 
 label-active = %index%
 label-active-foreground = ${colors.active}
-label-active-background = ${colors.background}
+label-active-background = #333333
+;${colors.background}
 label-active-underline= #6790eb
 label-active-padding = 2
 
