@@ -1,0 +1,99 @@
+#
+# wm independent hotkeys
+#
+
+# terminal emulator
+super + Return
+	xfce4-terminal
+# For transparency do yay -S ....
+# program launcher
+super + p
+	dmenu_run -fn "Noto Sans Regular-16" -sb "#990000" -sf "#FFFF66" -p "Run: "
+
+ctrl + g
+	geany
+	
+ctrl + v
+	pavucontrol
+
+super + d
+	rofi -modi drun -show drun -disable-history -icon-theme "Papirus" -show-icons
+	
+super + F1
+	firefox
+
+super + F2
+	thunar
+	
+super + F3
+	lxtask
+
+super + F4
+	rofi -show drun -show-icons
+	
+super + F5
+	blueberry
+	
+super + x
+	archlinux-logout
+
+super + k
+	polybar-msg cmd toggle
+
+F2
+	jgmenu_run
+
+F9
+    brave
+
+F10
+	pamac-manager
+
+F11
+        xfce4-terminal --drop-down
+	
+F12
+	pcmanfm
+	
+ctrl + F1
+	st -e htop
+ctrl + F2
+	lxterminal -e 'curl wttr.in/Caerphilly && read'
+ctrl + F3
+	pamac-manager
+ctrl + F4
+	mocp -G
+ctrl + F5
+	gsimplecal
+	
+ctrl + shift + m
+	lxterminal -e 'padsp mocp'
+
+ctrl + shift + n
+	mocp --next
+	
+ctrl + shift + p
+	mocp --previous
+	
+ctrl + Right
+	feh --bg-scale --randomize ~/Pictures/wallpapers/*
+	
+#super + z
+	#xfce4-appfinder
+	
+
+
+# make sxhkd reload its configuration files:
+super + Escape
+	pkill -USR1 -x sxhkd
+
+#
+# bspwm hotkeys
+#
+
+
+# MINE #############################################
+~button2
+	jgmenu_run
+	
+
