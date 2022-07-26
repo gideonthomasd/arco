@@ -13,3 +13,4 @@ mkdir -p ~/.config/awesome
 cd awesome
 cp -r * ~/.config/awesome
 cd ..
+cp pink.png ~/Pictures/wallpapers
