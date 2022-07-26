@@ -214,6 +214,8 @@ awful.screen.connect_for_each_screen(function(s)
     myicon = awful.widget.launcher({ image = "/home/phil/.config/awesome/menu.png", command = "/home/phil/.config/rofi/launchers/colorful/launcher.sh" })
     mymusic = awful.widget.launcher({ image = "/home/phil/.config/awesome/music.png", command = "mocp -G" })
     myweather = awful.widget.launcher({ image = "/home/phil/.config/awesome/weather.png", command = "lxterminal -e 'curl wttr.in/Caerphilly && read'" })
+    myram = awful.widget.launcher({ image = "/home/phil/.config/awesome/ram2.png", command = "lxterminal -e htop" })
+    mycalendar = awful.widget.launcher({ image = "/home/phil/.config/awesome/calendar.png", command = "lxterminal -e calcurse" })
     local mytext = wibox.widget {
     markup = "<span foreground='#00ff00'> Ram: </span>",
     widget = wibox.widget.textbox,
@@ -245,11 +247,13 @@ awful.screen.connect_for_each_screen(function(s)
             mymusic,
             awful.widget.watch("/home/phil/.config/awesome/music_state.sh" ,1),
             space,
-            mytext,
+--            mytext,
+			myram,
             awful.widget.watch('bash -c "free -h | awk \'/^Mem/ {print $3}\'"' ,1),  
             --mykeyboardlayout,
             space,
-            mytext_date,
+--            mytext_date,
+			mycalendar,
             mytextclock,
             wibox.widget.systray(),
             
@@ -634,5 +638,6 @@ awful.spawn.with_shell("lxpolkit")
 awful.spawn.with_shell("nm-applet")
 
 awful.spawn.with_shell("sxhkd -c ~/.config/awesome/sxhkdrc")
-awful.spawn.with_shell("volumeicon")
+awful.spawn.with_shell("volctl")
+awful.spawn.with_shell("blueman-applet")
 
