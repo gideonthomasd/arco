@@ -2,6 +2,7 @@
 
 sudo pacman -S awesome
 yay -S picom-jonaburg-git
+yay -S volctl
 cd awesome
 chmod +x *.sh
 cd polybar
