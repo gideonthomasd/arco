@@ -643,7 +643,7 @@ awful.spawn.with_shell("nm-applet")
 
 awful.spawn.with_shell("sxhkd -c ~/.config/awesome/sxhkdrc")
 awful.spawn.with_shell("volctl")
-awful.spawn.with_shell("blueman-applet")
+--awful.spawn.with_shell("blueman-applet")
 
 gears.timer {
        timeout = 30,
