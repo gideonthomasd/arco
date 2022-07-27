@@ -216,6 +216,7 @@ awful.screen.connect_for_each_screen(function(s)
     myweather = awful.widget.launcher({ image = "/home/phil/.config/awesome/weather.png", command = "lxterminal -e 'curl wttr.in/Caerphilly && read'" })
     myram = awful.widget.launcher({ image = "/home/phil/.config/awesome/ram2.png", command = "lxterminal -e htop" })
     mycalendar = awful.widget.launcher({ image = "/home/phil/.config/awesome/calendar.png", command = "lxterminal -e calcurse" })
+    mydownload = awful.widget.launcher({ image = "/home/phil/.config/awesome/download.png", command = "pamac-manager" })
     local mytext = wibox.widget {
     markup = "<span foreground='#00ff00'> Ram: </span>",
     widget = wibox.widget.textbox,
@@ -241,6 +242,9 @@ awful.screen.connect_for_each_screen(function(s)
         s.mytasklist, -- Middle widget
         { -- Right widgets
             layout = wibox.layout.fixed.horizontal,
+            mydownload,
+            awful.widget.watch("/home/phil/.config/awesome/updates.sh" ,600),
+            space,
             myweather,
             awful.widget.watch("/home/phil/.config/awesome/dwmweather.sh" ,600),
             space,
@@ -257,7 +261,7 @@ awful.screen.connect_for_each_screen(function(s)
             mytextclock,
             wibox.widget.systray(),
             
-            s.mylayoutbox,
+ --           s.mylayoutbox,
         },
    }
 end)
@@ -640,4 +644,10 @@ awful.spawn.with_shell("nm-applet")
 awful.spawn.with_shell("sxhkd -c ~/.config/awesome/sxhkdrc")
 awful.spawn.with_shell("volctl")
 awful.spawn.with_shell("blueman-applet")
+
+gears.timer {
+       timeout = 30,
+       autostart = true,
+       callback = function() collectgarbage() end
+}
 
